@@ -4,9 +4,18 @@
   "description": "Actividad2",
   "license": "ISC",
   "author": "Gino Pistolia",
-  "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GinoPistolia2014/tp-aw2.git"
+  },
+  "keywords": [],
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/GinoPistolia2014/tp-aw2/issues"
+  },
+  "homepage": "https://github.com/GinoPistolia2014/tp-aw2#readme"
 }
