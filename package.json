@@ -1,12 +1,13 @@
 {
   "name": "nodeactividad2",
   "version": "1.0.0",
-  "description": "Actividad2",
+  "description": "Proyecto E-commerce",
   "license": "ISC",
   "author": "Gino Pistolia",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.js"
+    "dev": "node --watch index.js",
+    "start": "node inde.mjs"
   },
   "repository": {
     "type": "git",
