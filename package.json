@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node --watch index.js",
-    "start": "node inde.mjs"
+    "start": "node index.mjs"
   },
   "repository": {
     "type": "git",
