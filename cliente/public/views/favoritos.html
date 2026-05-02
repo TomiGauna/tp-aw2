@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Permite que el diseño sea responsivo en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Favoritos - PIERCING</title>
+
+    <!-- Estilos generales -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+</head>
+
+<body data-page="favoritos">
+
+    <!-- HEADER PRINCIPAL -->
+    <header class="header">
+
+        <!-- Título de la sección -->
+      <h1><a href="/">PIERCING</a></h1>
+
+        <!-- Botón para regresar al catálogo -->
+        <a href="/catalogo" class="link-volver">Volver al catálogo</a>
+
+    </header>
+    <div id="mensaje" class="mensaje-oculto"></div>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container">
+
+        <!-- Botón para borrar todos los favoritos almacenados -->
+        <button id="vaciar-favoritos" class="btn btn-danger">
+            Vaciar favoritos
+        </button>
+
+        <!-- Contenedor donde se mostrarán las tarjetas de Pokémon favoritos -->
+        <section id="favoritos" class="catalogo-grid">
+            <!-- favoritos.js generará aquí cada Pokémon guardado -->
+        </section>
+       
+    </main>
+
+    <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Newsletter -->
+      <div class="footer-col">
+        <h4>Suscribite</h4>
+        <p class="updates-text">Recibí novedades y descuentos</p>
+        <input type="email" placeholder="Tu email" id="footer-input">
+        <button type="submit" class="btn-hero" id="footer-btn">Enviar</button>
+      </div>
+
+      <!-- Categorías -->
+      <div class="footer-col">
+        <h4>CATEGORÍAS</h4>
+        <a href="/catalogo">Abrigos</a>
+        <a href="/catalogo">Jeans</a>
+        <a href="/catalogo">Remeras</a>
+        <a href="/catalogo">Camisas</a>
+        <a href="/catalogo">Vestidos</a>
+      </div> 
+
+      <!-- Contacto -->
+      <div class="footer-col">
+        <h4>CONTACTÁNOS</h4>
+        <p>📍 Córdoba, Argentina</p>
+        <p>📧 ventas@piercing.com</p>
+        <p>📞 351000000</p>
+
+        <div class="socials">
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 PIERCING - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+    <!-- Scripts globales y específicos para esta página -->
+    <script src="../js/global.js"></script>     <!-- Actualiza contadores y maneja funciones generales -->
+    <script src="../js/favoritos.js"></script>  <!-- Manejo de favoritos (agregar / eliminar / renderizar) -->
+    
+
+</body>
+</html>
+
+
+
+
+
+
