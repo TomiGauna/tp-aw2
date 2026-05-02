@@ -148,5 +148,10 @@ if (footerBtn) {
   });
 }
 
-export { showMessage }
-
+if (loginBtn) {
+  loginBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    loginInput.value = "";
+    showMessage("El panel se encuentra en mantenimento...", "error");
+})
+}
