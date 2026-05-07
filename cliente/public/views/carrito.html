@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+</head>
+
+<body data-page="carrito">
+
+  <header class="header">
+    <h1><a href="/">PIERCING</a></h1>
+    <a href="/catalogo" class="link-volver">← Volver al catálogo</a>
+  </header>
+   <div id="mensaje" class="mensaje-oculto"></div>
+  <main class="container carrito-layout">
+
+    <section class="carrito-box">
+      <h2>Tu carrito</h2>
+
+      <div id="cart-items" class="cart-list"></div>
+
+      <div class="cart-footer">
+        <p class="total">
+          Total: $<span id="cart-total">0</span>
+        </p>
+
+        <div class="cart-actions">
+          <button id="vaciar-carrito" class="btn btn-danger">
+            Vaciar carrito
+          </button>
+
+          <a href="/catalogo" class="btn btn-light">
+            Seguir comprando
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="checkout-box">
+      <h2>Checkout</h2>
+
+      <form id="form-pago" action="/confirmacion" method="GET" class="checkout-form">
+        <h3>Datos personales</h3>
+
+        <div class="form-grid">
+          <input type="text" name="fullname" placeholder="Nombre completo" required>
+          <input type="email" name="email" placeholder="Correo electrónico" required>
+          <input type="text" name="address" placeholder="Dirección" required>
+        </div>
+
+        <h3>Pago</h3>
+
+        <div class="form-grid">
+          <select name="paymentMethod" required>
+            <option value="">Selecciona un método</option>
+            <option value="debito">Débito</option>
+            <option value="credito">Crédito</option>
+          </select>
+
+          <input type="text" name="cardNumber" placeholder="1234 1234 1234 1234" required>
+          <input type="month" name="expDate" required>
+          <input type="text" name="cvv" placeholder="123" required>
+        </div>
+
+        <input type="hidden" name="cartSummary" id="cart-summary">
+
+        <button type="submit" class="btn-checkout">Finalizar compra</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Newsletter -->
+      <div class="footer-col">
+        <h4>Suscribite</h4>
+        <p class="updates-text">Recibí novedades y descuentos</p>
+        <input type="email" placeholder="Tu email" id="footer-input">
+        <button type="submit" class="btn-hero" id="footer-btn">Enviar</button>
+      </div>
+
+      <!-- Categorías -->
+      <div class="footer-col">
+        <h4>CATEGORÍAS</h4>
+        <a href="/catalogo">Abrigos</a>
+        <a href="/catalogo">Jeans</a>
+        <a href="/catalogo">Remeras</a>
+        <a href="/catalogo">Camisas</a>
+        <a href="/catalogo">Vestidos</a>
+      </div> 
+
+      <!-- Contacto -->
+      <div class="footer-col">
+        <h4>CONTACTÁNOS</h4>
+        <p>📍 Córdoba, Argentina</p>
+        <p>📧 ventas@piercing.com</p>
+        <p>📞 351000000</p>
+
+        <div class="socials">
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 PIERCING - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="../js/global.js"></script>
+  <script src="../js/carrito.js"></script>
+</body>
+</html>

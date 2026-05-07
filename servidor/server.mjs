@@ -11,7 +11,9 @@ const __dirname = path.dirname(__filename);
 /* =============================
    MIDDLEWARE
 ============================= */
+
 app.use(express.static(path.resolve(__dirname, "public"))); 
+
 
 /* =============================
    RUTA 404
