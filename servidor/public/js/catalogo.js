@@ -108,7 +108,7 @@ function renderCatalogo(lista) {
     </div>
 
     <div class="product-actions">
-      <a href="/producto/${producto.id}" class="btn-detail">
+      <a href="/views/ProductoDetalle.html?id=${producto.id}" class="btn-detail">
         Ver detalle
       </a>
 

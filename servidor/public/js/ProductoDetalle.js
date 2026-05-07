@@ -31,7 +31,8 @@ function normalizarProducto(p) {
 async function cargarProductoDetalle() {
   if (!detalleContainer) return;
 
-  const id = window.location.pathname.split("/").pop();
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
 
   if (!id) {
     detalleContainer.innerHTML = `<p class="empty-state">Producto no encontrado.</p>`;

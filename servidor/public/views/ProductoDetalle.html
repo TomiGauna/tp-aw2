@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catalogo - Fashion Store</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+  <title>Detalle producto - PIERCING</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
 </head>
 
-<body data-page="catalogo">
+<body data-page="detalle">
 
   <div class="top-bar">
     <div class="top-bar-track">
@@ -22,58 +22,29 @@
       <span>🎁 DESCUENTO extra por transferencia</span>
     </div>
   </div>
+
   <header class="header">
+    <div class="header-left">
+      <a href="/views/catalogo.html" class="home-link">← Volver al catálogo</a>
+    </div>
+
     <div class="header-center">
       <h1><a href="/">PIERCING</a></h1>
     </div>
 
     <div class="header-right">
-      <a href="/favoritos"> ⭐(<span id="fav-count">0</span>)</a>
-      <a href="/carrito">🛒(<span id="bag-count">0</span>)</a>
+      <a href="/views/favoritos.html"> ⭐(<span id="fav-count">0</span>)</a>
+      <a href="/views/carrito.html">🛒(<span id="bag-count">0</span>)</a>
     </div>
-
   </header>
 
-  <div id="loader" class="oculto">
-    <div class="pokeball"></div>
-  </div>
+  <main class="detalle-container">
+    <section id="producto-detalle" class="detalle-card">
+      <p class="empty-state">Cargando producto...</p>
+    </section>
+  </main>
 
   <div id="mensaje" class="mensaje-oculto"></div>
-
-  <main class="container">
-    <div class="catalogo-layout">
-
-      <aside class="sidebar">
-        <h3 class="sidebar-title">Categorías</h3>
-
-        <ul class="categorias-lista">
-          <li>Todos</li>
-          <li>Abrigos</li>
-          <li>Jeans</li>
-          <li>Remeras</li>
-          <li>Camisas</li>
-          <li>Vestidos</li>
-        </ul>
-      </aside>
-
-      <div class="catalogo-contenido">
-        <div class="contenedor-filtros">
-          <input type="text" id="buscar" placeholder="¿Qué estás buscando?">
-
-          <select id="ordenar">
-            <option value="">Ordenar por</option>
-            <option value="nombre-asc">Nombre A-Z</option>
-            <option value="precio-asc">Precio menor</option>
-            <option value="precio-desc">Precio mayor</option>
-          </select>
-        </div>
-
-        <section id="catalogo" class="catalogo-grid"></section>
-        <div id="paginacion" class="paginacion"></div>
-      </div>
-
-    </div>
-  </main>
 
   <footer class="footer">
     <div class="footer-container">
@@ -89,11 +60,11 @@
       <!-- Categorías -->
       <div class="footer-col">
         <h4>CATEGORÍAS</h4>
-        <a href="#">Abrigos</a>
-        <a href="#">Jeans</a>
-        <a href="#">Remeras</a>
-        <a href="#">Camisas</a>
-        <a href="#">Vestidos</a>
+        <a href="/views/catalogo.html">Abrigos</a>
+        <a href="/views/catalogo.html">Jeans</a>
+        <a href="/views/catalogo.html">Remeras</a>
+        <a href="/views/catalogo.html">Camisas</a>
+        <a href="/views/catalogo.html">Vestidos</a>
       </div> 
 
       <!-- Contacto -->
@@ -116,8 +87,7 @@
     </div>
   </footer>
 
-  <script src="../js/global.js"></script>
-  <script src="../js/catalogo.js"></script>
-
+  <script src="/js/global.js"></script>
+  <script src="/js/ProductoDetalle.js"></script>
 </body>
 </html>

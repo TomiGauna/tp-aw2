@@ -11,38 +11,7 @@ const __dirname = path.dirname(__filename);
 /* =============================
    MIDDLEWARE
 ============================= */
-app.use(express.static(path.resolve(__dirname, "..", "cliente", "public")));
-
-/* =============================
-   RUTAS
-============================= */
-app.get("/", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "public", "index.html"));
-});
-
-app.get("/catalogo", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "..", "cliente", "public", "views", "catalogo.html"))
-})
-
-app.get("/favoritos", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "..", "cliente", "public", "views", "favoritos.html"));
-});
-
-app.get("/carrito", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "..", "cliente", "public", "views", "carrito.html"));
-});
-
-app.get("/confirmacion", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "..", "cliente", "public", "views", "confirmacionCompra.html"));
-});
-
-app.get("/producto/:id", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "..", "cliente", "public", "views", "ProductoDetalle.html"));
-});
-
-app.get("/login", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "..", "cliente", "public", "views", "login.html"));
-})
+app.use(express.static(path.resolve(__dirname, "public"))); 
 
 /* =============================
    RUTA 404

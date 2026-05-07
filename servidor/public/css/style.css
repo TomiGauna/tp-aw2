@@ -184,7 +184,7 @@ body {
 .hero {
   position: relative;
   height: 100vh;
-  background: url('../img/hero.jpg') center/cover no-repeat;
+  background: url('/img/hero.jpg') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1521,7 +1521,7 @@ body[data-page="confirmacion"] .header {
 .mainlogin {
   position: relative;
   height: 100vh;
-  background: url('../img/loginimg.jpg') center/cover;
+  background: url('/img/loginimg.jpg') center/cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
