@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle producto - PIERCING</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+</head>
+
+<body data-page="detalle">
+
+  <div class="top-bar">
+    <div class="top-bar-track">
+      <span>🚚 Envíos a TODO el país</span>
+      <span>🛒 CÓRDOBA EXPRESS EN EL DÍA</span>
+      <span>💳 3 CUOTAS SIN INTERÉS</span>
+      <span>🎁 DESCUENTO extra por transferencia</span>
+      <span>🚚 Envíos a TODO el país</span>
+      <span>🛒 CÓRDOBA EXPRESS EN EL DÍA</span>
+      <span>💳 3 CUOTAS SIN INTERÉS</span>
+      <span>🎁 DESCUENTO extra por transferencia</span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header-left">
+      <a href="/views/catalogo.html" class="home-link">← Volver al catálogo</a>
+    </div>
+
+    <div class="header-center">
+      <h1><a href="/">PIERCING</a></h1>
+    </div>
+
+    <div class="header-right">
+      <a href="/views/favoritos.html"> ⭐(<span id="fav-count">0</span>)</a>
+      <a href="/views/carrito.html">🛒(<span id="bag-count">0</span>)</a>
+    </div>
+  </header>
+
+  <main class="detalle-container">
+    <section id="producto-detalle" class="detalle-card">
+      <p class="empty-state">Cargando producto...</p>
+    </section>
+  </main>
+
+  <div id="mensaje" class="mensaje-oculto"></div>
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Newsletter -->
+      <div class="footer-col">
+        <h4>Suscribite</h4>
+        <p class="updates-text">Recibí novedades y descuentos</p>
+        <input type="email" placeholder="Tu email" id="footer-input">
+        <button type="submit" class="btn-hero" id="footer-btn">Enviar</button>
+      </div>
+
+      <!-- Categorías -->
+      <div class="footer-col">
+        <h4>CATEGORÍAS</h4>
+        <a href="/views/catalogo.html">Abrigos</a>
+        <a href="/views/catalogo.html">Jeans</a>
+        <a href="/views/catalogo.html">Remeras</a>
+        <a href="/views/catalogo.html">Camisas</a>
+        <a href="/views/catalogo.html">Vestidos</a>
+      </div> 
+
+      <!-- Contacto -->
+      <div class="footer-col">
+        <h4>CONTACTÁNOS</h4>
+        <p>📍 Córdoba, Argentina</p>
+        <p>📧 ventas@piercing.com</p>
+        <p>📞 351000000</p>
+
+        <div class="socials">
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 PIERCING - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="/js/global.js"></script>
+  <script src="/js/ProductoDetalle.js"></script>
+</body>
+</html>

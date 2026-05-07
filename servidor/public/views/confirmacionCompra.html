@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- Permite que el contenido sea responsivo en dispositivos móviles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Compra confirmada - PokeShop</title>
+
+  <!-- Estilos generales -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+</head>
+
+<body data-page="confirmacion">
+
+  <!-- HEADER SUPERIOR -->
+  <header class="header">
+
+    <!-- Nombre del sitio -->
+      <h1><a href="/">PIERCING</a></h1>
+
+    <!-- Botón para regresar al catálogo -->
+    <div class="acciones-header">
+      <a href="/views/catalogo.html" class="btn btn-volver">Volver Catálogo</a>
+    </div>
+  </header>
+  <div id="mensaje" class="mensaje-oculto"></div>
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="container confirmacion">
+
+    <!-- Encabezado de confirmación -->
+    <h2>¡Compra realizada con éxito! ✔</h2>
+    <p>Gracias por tu compra. Aquí tienes los detalles:</p>
+
+    <!-- Aquí se insertará dinámicamente la información de confirmación -->
+    <div id="info" class="detalle-compra">
+      <!-- confirmacion.js llenará esta parte -->
+    </div>
+
+    <!-- Botón para volver al catálogo -->
+    <a href="/views/catalogo.html" class="btn btn-primary">Seguir comprando</a>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Newsletter -->
+      <div class="footer-col">
+        <h4>Suscribite</h4>
+        <p class="updates-text">Recibí novedades y descuentos</p>
+        <input type="email" placeholder="Tu email" id="footer-input">
+        <button type="submit" class="btn-hero" id="footer-btn">Enviar</button>
+      </div>
+
+      <!-- Categorías -->
+      <div class="footer-col">
+        <h4>CATEGORÍAS</h4>
+        <a href="/views/catalogo.html">Abrigos</a>
+        <a href="/views/catalogo.html">Jeans</a>
+        <a href="/views/catalogo.html">Remeras</a>
+        <a href="/views/catalogo.html">Camisas</a>
+        <a href="/views/catalogo.html">Vestidos</a>
+      </div> 
+
+      <!-- Contacto -->
+      <div class="footer-col">
+        <h4>CONTACTÁNOS</h4>
+        <p>📍 Córdoba, Argentina</p>
+        <p>📧 ventas@piercing.com</p>
+        <p>📞 351000000</p>
+
+        <div class="socials">
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 PIERCING - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!-- Scripts necesarios -->
+  <script src="/js/global.js"></script>
+  <script src="/js/confirmacion.js"></script>
+</body>
+</html>
